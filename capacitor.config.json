@@ -1,0 +1,6 @@
+{
+  "appId": "com.PokeHall.app",
+  "appName": "PokeHall",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}

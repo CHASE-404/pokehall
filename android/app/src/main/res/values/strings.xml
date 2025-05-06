@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">PokeHall</string>
+    <string name="title_activity_main">PokeHall</string>
+    <string name="package_name">com.PokeHall.app</string>
+    <string name="custom_url_scheme">com.PokeHall.app</string>
+</resources>

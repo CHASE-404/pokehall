@@ -1,6 +1,8 @@
 // src/firebaseAuth.js
 import { getAuth } from 'firebase/auth';
-import app from './firebaseConfig';
+import { initializeApp } from 'firebase/app';
+import { db } from './firebaseConfig';
 
-const auth = getAuth(app);
+// Get the Firebase app instance that was already initialized
+const auth = getAuth();
 export default auth;

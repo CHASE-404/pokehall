@@ -4,17 +4,17 @@ import { getAuth } from 'firebase/auth';
 
 // Your Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyC5Y9zer4ADBej2CYhnNZLe3elht1w8KP0",
-    authDomain: "pokehall-ed8d0.firebaseapp.com",
-    projectId: "pokehall-ed8d0",
-    storageBucket: "pokehall-ed8d0.firebasestorage.app",
-    messagingSenderId: "327911467028",
-    appId: "1:327911467028:web:8e5070cb0e7aa12f79df01",
-    measurementId: "G-E33SMNX5R7"
+    apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+    authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+    projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+    storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+    appId: import.meta.env.VITE_FIREBASE_APP_ID,
+    measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);   // Firestore
-const auth = getAuth(app);      // Firebase Auth
+const db = getFirestore(app);   
+const auth = getAuth(app);    
 
 export { db, auth };
